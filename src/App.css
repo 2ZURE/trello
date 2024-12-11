@@ -1,0 +1,125 @@
+/* Reset Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  /* General Layout */
+  .app-container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Sidebar Styles */
+  .sidebar {
+    width: 16rem;
+    background-color: #2d3748;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-bottom: 1px solid #4a5568;
+    padding-bottom: 1rem;
+  }
+  
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .sidebar a {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    color: white;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar a:hover,
+  .sidebar a.active {
+    background-color: #4a5568;
+  }
+  
+  /* Icon Styles */
+  .sidebar a svg {
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+  }
+  
+  /* Main Content Styles */
+  .main-content {
+    flex: 1;
+    background-color: #f7fafc;
+    padding: 2rem;
+    overflow-y: auto;
+  }
+  
+  .main-content h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d3748;
+  }
+  
+  .main-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #4a5568;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 12rem;
+    }
+  
+    .sidebar h2 {
+      font-size: 1.25rem;
+    }
+  
+    .main-content {
+      padding: 1rem;
+    }
+
+    .todo-list {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      .todo-list ul {
+        margin-top: 10px;
+      }
+      
+      .todo-list li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      
+      .todo-list li:last-child {
+        border-bottom: none;
+      }
+      
+      .todo-list button {
+        transition: background-color 0.3s ease;
+      }
+      
+  }
+  
